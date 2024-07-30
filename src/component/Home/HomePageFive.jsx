@@ -84,7 +84,10 @@ const Wrapper = styled.div`
     font-weight: 400;
     text-align: center;
     font-family: Prata;
-    color: rgb(25, 48, 92)
+    color: rgb(25, 48, 92);
+    @media (max-width:600px) {
+      font-size: 30px;
+    }
   }
 
   @media (max-width: 768px) {

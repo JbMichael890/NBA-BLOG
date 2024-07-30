@@ -31,10 +31,10 @@ const Header = () => {
           <hr />
 
           <NavHold>
-            <a href="/">
+            <a href="/blog">
               <p>HOME</p>
             </a>
-            <a href="/blog">
+            <a href="/">
               <p>BLOG ▼</p>
             </a>
             <a href="/news">
