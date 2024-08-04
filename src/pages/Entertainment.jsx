@@ -1,17 +1,11 @@
-import styled from "styled-components"
-
-
+import Watch from "../component/Entertain/Watch";
 
 const Entertainment = () => {
   return (
-<Container>
-    <Wrapper>
-    Entertainment daily
-    </Wrapper>
-</Container>
-  )
-}
+    <div>
+      <Watch />
+    </div>
+  );
+};
 
-export default Entertainment
-const Container = styled.div``
-const Wrapper = styled.div``
+export default Entertainment;

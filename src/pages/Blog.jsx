@@ -1,21 +1,18 @@
-import BlogPageFive from "../component/Blog/BlogPageFive";
-import BlogPageFour from "../component/Blog/BlogPageFour";
-import BlogPageOne from "../component/Blog/BlogPageOne";
-import BlogPageSeve from "../component/Blog/BlogPageSeve";
-import BlogPageSix from "../component/Blog/BlogPageSix";
-import BlogPageThree from "../component/Blog/BlogPageThree";
-import BlogPageTwo from "../component/Blog/BlogPageTwo";
+import HomePageOne from "../component/Home/HomePageOne";
+
+import HomePageTwo from "../component/Home/HomePageTwo";
+import HomePageThree from "../component/Home/HomePageThree";
+import HomePageFour from "../component/Home/HomePageFour";
+import HomePageFive from "../component/Home/HomePageFive";
 
 const Blog = () => {
   return (
     <div>
-      <BlogPageOne />
-      <BlogPageTwo />
-      <BlogPageThree />
-      <BlogPageFour />
-      <BlogPageFive/>
-      <BlogPageSix/>
-      <BlogPageSeve/>
+      <HomePageOne />
+      <HomePageTwo />
+      <HomePageThree />
+      <HomePageFour />
+      <HomePageFive />
     </div>
   );
 };

@@ -1,19 +1,21 @@
-import HomePageOne from "../component/Home/HomePageOne";
-// import styled from "styled-components";
-// import Background from "../assets/png/home-background.png";
-import HomePageTwo from "../component/Home/HomePageTwo";
-import HomePageThree from "../component/Home/HomePageThree";
-import HomePageFour from "../component/Home/HomePageFour";
-import HomePageFive from "../component/Home/HomePageFive";
+import BlogPageOne from "../component/Blog/BlogPageOne";
+import BlogPageTwo from "../component/Blog/BlogPageTwo";
+import BlogPageThree from "../component/Blog/BlogPageThree";
+import BlogPageFour from "../component/Blog/BlogPageFour";
+import BlogPageFive from "../component/Blog/BlogPageFive";
+import BlogPageSix from "../component/Blog/BlogPageSix";
+import BlogPageSeve from "../component/Blog/BlogPageSeve";
 
 const Home = () => {
   return (
     <div>
-      <HomePageOne />
-      <HomePageTwo />
-      <HomePageThree />
-      <HomePageFour />
-      <HomePageFive />
+      <BlogPageOne />
+      <BlogPageTwo />
+      <BlogPageThree />
+      <BlogPageFour />
+      <BlogPageFive />
+      <BlogPageSix />
+      <BlogPageSeve />
     </div>
   );
 };

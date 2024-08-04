@@ -7,9 +7,10 @@ import News from "../pages/News";
 import Entertainment from "../pages/Entertainment";
 import History from "../pages/History";
 import Community from "../pages/Community";
-import Details from "../pages/Details";
+import Details from "../component/Details";
 import BlogPageImageTwo from "../pages/BlogPageImageTwo";
 import BlogPageImage from "../pages/BlogPageImage";
+import Postblog from "../pages/Postblog";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -45,7 +46,7 @@ export const mainRoute = createBrowserRouter([
         element: <Community />,
       },
       {
-        path: "/details",
+        path: "/details/:id",
         element: <Details />,
       },
       {
@@ -55,6 +56,10 @@ export const mainRoute = createBrowserRouter([
       {
         path: "/blogtwo",
         element: <BlogPageImageTwo />,
+      },
+      {
+        path: "/postblog",
+        element: <Postblog />,
       },
     ],
   },

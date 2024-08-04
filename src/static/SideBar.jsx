@@ -11,11 +11,11 @@ const SideBar = () => {
   return (
     <Container>
       <Wrapper>
-        <a href="/blog">
+        <a href="/">
           <p >HOME</p>
         </a>
 
-        <a href="/">
+        <a href="/blog">
           <p>BLOG ▼</p>
         </a>
         <a href="/news">

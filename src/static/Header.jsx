@@ -31,24 +31,31 @@ const Header = () => {
           <hr />
 
           <NavHold>
-            <a href="/blog">
+            <a href="/">
               <p>HOME</p>
             </a>
-            <a href="/">
+            <a href="/blog">
               <p>BLOG ▼</p>
             </a>
             <a href="/news">
               <p>NEWS ▼</p>
             </a>
+            <a href="/entertainment">
+
+<p>ENTERTAINMENT ▼</p>
+</a>
 
             <p onClick={alertUser}>TEAMS ▼ </p>
            
 
-            <p onClick={alertUser}>ENTERTAINMENT ▼</p>
 
             <p onClick={alertUser}>HISTORY ▼ </p>
 
             <p onClick={alertUser}>COMMUNITY ▼</p>
+            <a href="/postblog">
+
+<p>POST-BLOG ▼</p>
+</a>
           </NavHold>
         </Wrapper>
         <Sidenav onClick={getToggle}>
