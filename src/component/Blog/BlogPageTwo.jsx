@@ -48,6 +48,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
   h1{
     font-size: 30px;
     font-weight: 400;
@@ -56,11 +57,11 @@ const Container = styled.div`
     color: rgb(25, 48, 92)
   }
   @media (max-width: 750px) {
-    margin-top: -50px;
+    /* margin-top: -50px; */
     
   }
   @media (max-width: 500px) {
-    margin-top: -190px;
+    /* margin-top: -190px; */
   }
 `;
 const HeaderImg = styled.div`
@@ -68,6 +69,7 @@ const HeaderImg = styled.div`
   display: flex;
     justify-content: center;
     align-items: center;
+   
   img {
     cursor: pointer;
     @media (max-width: 768px) {

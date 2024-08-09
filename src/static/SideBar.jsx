@@ -11,26 +11,30 @@ const SideBar = () => {
   return (
     <Container>
       <Wrapper>
-        <a href="/">
-          <p >HOME</p>
-        </a>
+      <a href="/">
+              <p>HOME</p>
+            </a>
+            <a href="/blog">
+              <p>BLOG ▼</p>
+            </a>
+            <a href="/news">
+              <p>NEWS ▼</p>
+            </a>
+            <a href="/entertainment">
+              <p>ENTERTAINMENT ▼</p>
+            </a>
 
-        <a href="/blog">
-          <p>BLOG ▼</p>
-        </a>
-        <a href="/news">
-        <p>NEWS </p>
-        </a>
+            <p onClick={alertUser}>TEAMS </p>
 
-        <p onClick={alertUser}>TEAMS ▼ </p>
+            <p onClick={alertUser}>HISTORY </p>
 
-        
-
-        <p onClick={alertUser}>ENTERTAINMENT </p>
-
-        <p onClick={alertUser}>HISTORY ▼ </p>
-
-        <p onClick={alertUser}>COMMUNITY</p>
+            <p onClick={alertUser}>COMMUNITY ▼</p>
+            <a href="/postblog">
+              <p>POST-BLOG ▼</p>
+            </a>
+            <a href="/store">
+              <p>NBA-STORE ▼</p>
+            </a>
 
         <button onClick={alertUser}>SignUp</button>
       </Wrapper>
@@ -45,13 +49,13 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   background-color: #1c1c1f;
-  height: 50vh;
+  height: 65vh;
   width: 200px;
   color: indigo;
   font-weight: 800;
   p {
     /* margin: 0px 10px; */
-    color: #48007b;
+    color: #ddd;
     cursor: pointer;
     font-weight: 500;
     margin-left: 10px;

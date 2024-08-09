@@ -1,17 +1,19 @@
-import styled from "styled-components";
-import background from "../../assets/webp/NBA.webp";
+import styled from "styled-components"
+import background from "../../assets/svg/store.jpg"
 
-const BlogPageOne = () => {
+const StorePageTwo = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
-    </Container>
-  );
-};
+        <Warpper>
 
-export default BlogPageOne;
-const Container = styled.div`
-  margin-top: 20px;
+        </Warpper>
+    </Container>
+  )
+}
+
+export default StorePageTwo
+const  Container = styled.div`
+ margin-top: 20px;
   background-image: url(${background});
   min-height: 100vh;
 
@@ -22,6 +24,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: grab;
   @media (max-width: 750px) {
     /* margin-top: -50px; */
     
@@ -32,13 +35,5 @@ const Container = styled.div`
     
   }
 `;
-const Wrapper = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* h1 {
-    color: white;
-    font-size: 90px;
-    font-family: Monserrat;
-  } */
-`;
+
+const  Warpper = styled.div``

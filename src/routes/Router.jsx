@@ -11,6 +11,7 @@ import Details from "../component/Details";
 import BlogPageImageTwo from "../pages/BlogPageImageTwo";
 import BlogPageImage from "../pages/BlogPageImage";
 import Postblog from "../pages/Postblog";
+import Store from "../pages/Store";
 
 export const mainRoute = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ export const mainRoute = createBrowserRouter([
         path: "/postblog",
         element: <Postblog />,
       },
+      {
+        path: "/store",
+        element: <Store/>,
+      }
     ],
   },
 ]);

@@ -41,21 +41,20 @@ const Header = () => {
               <p>NEWS ▼</p>
             </a>
             <a href="/entertainment">
+              <p>ENTERTAINMENT ▼</p>
+            </a>
 
-<p>ENTERTAINMENT ▼</p>
-</a>
+            <p onClick={alertUser}>TEAMS </p>
 
-            <p onClick={alertUser}>TEAMS ▼ </p>
-           
-
-
-            <p onClick={alertUser}>HISTORY ▼ </p>
+            <p onClick={alertUser}>HISTORY </p>
 
             <p onClick={alertUser}>COMMUNITY ▼</p>
             <a href="/postblog">
-
-<p>POST-BLOG ▼</p>
-</a>
+              <p>POST-BLOG ▼</p>
+            </a>
+            <a href="/store">
+              <p>NBA-STORE ▼</p>
+            </a>
           </NavHold>
         </Wrapper>
         <Sidenav onClick={getToggle}>
@@ -118,7 +117,7 @@ const NavHold = styled.div`
       color: #ffcbd4;
     }
   }
-  @media (max-width: 810px) {
+  @media (max-width: 990px) {
     display: none;
   }
 
@@ -139,7 +138,7 @@ const NavHold = styled.div`
 `;
 const Sidenav = styled.div`
   display: none;
-  @media (max-width: 810px) {
+  @media (max-width: 990px) {
     display: flex;
     font-size: 25px;
     cursor: pointer;

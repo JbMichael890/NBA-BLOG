@@ -5,15 +5,18 @@ import { addDoc, collection } from "firebase/firestore";
 import { db, baseStorage } from "../Firebase";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const PostImage = () => {
-  const [avatar, setAvatar] = useState(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [avatar, setAvatar] = useState("");
+
+  const navigate = useNavigate("");
 
   const uploadImage = (e) => {
     const file = e.target.files[0];
-    const fileRef = ref(baseStorage, "/nba-blog", file.name);
+    const fileRef = ref(baseStorage, "myImage" + file.name);
     const storageRef = uploadBytesResumable(fileRef, file);
     getDownloadURL(storageRef.snapshot.ref).then((url) => {
       setAvatar(url);
@@ -21,27 +24,24 @@ const PostImage = () => {
   };
 
   const createPost = async () => {
-    Swal.fire({
-      title: "Successful",
-       text: "Data posted successful",
-      icon: "success",
-   });
-    addDoc(collection(db, "NBA-BLOG"), {
+    addDoc(collection(db, "NBABLOG"), {
       title,
       description,
       avatar: await avatar,
-     
     });
-
+    Swal.fire({
+      title: "Successful",
+      text: "Data posted successful",
+      icon: "success",
+    });
+    navigate("/news");
     setTitle("");
-    setDescription("");
-    
   };
 
   return (
     <div>
       {" "}
-      {/* <button>Delete Post</button> */}
+      <button>Delete Post</button>
       <Container>
         <Wrapper>
           <input
@@ -103,7 +103,7 @@ const Wrapper = styled.div`
     width: 300px;
     background-color: #eee;
     height: 40px;
-
+    font-size: 16px;
     outline: none;
     border: none;
     margin-bottom: 1px;
@@ -116,6 +116,9 @@ const Wrapper = styled.div`
     height: 150px;
     resize: vertical;
     width: 250px;
+    border: none;
+    font-size: 14px;
+    outline: none;
     @media (max-width: 811px) {
       width: 180px;
       height: 75px;
