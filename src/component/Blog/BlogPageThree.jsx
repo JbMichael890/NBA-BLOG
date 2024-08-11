@@ -10,9 +10,10 @@ const BlogPageThree = () => {
 
 export default BlogPageThree;
 const Container = styled.div`
+  margin-top: 20px;
   background-image: url(${Background});
   min-height: 100vh;
-  margin-bottom: 20px;
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -20,11 +21,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 750px) {
-    margin-top: -50px;
-  }
+
   @media (max-width: 500px) {
-    margin-top: -190px;
+    margin-top: 0px;
+    min-height: 30vh;
+    
   }
 `;
 const Wrapper = styled.div``;

@@ -20,13 +20,15 @@ const BlogPageFour = () => {
 export default BlogPageFour;
 const Container = styled.div`
   display: flex;
+
   justify-content: center;
   align-items: center;
   min-width: 100%;
+  margin-top: 20px;
 `;
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -41,8 +43,8 @@ const Wrapper = styled.div`
   }
 `;
 const ImgOne = styled.div`
-  margin-right: 10px;
+  /* margin-right: 10px; */
 `;
 const ImgTwo = styled.div`
-  margin-left: 10px;
+  /* margin-left: 10px; */
 `;

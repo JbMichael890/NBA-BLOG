@@ -46,6 +46,9 @@ const ImgHol = styled.div`
     @media (max-width: 768px) {
       width: 450px;
     }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 `;
 const TextHold = styled.div`

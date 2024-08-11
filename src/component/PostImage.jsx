@@ -3,9 +3,11 @@ import styled from "styled-components";
 import background from "../assets/webp/NBA.webp";
 import { addDoc, collection } from "firebase/firestore";
 import { db, baseStorage } from "../Firebase";
-import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+// import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 
 const PostImage = () => {
   const [title, setTitle] = useState("");
@@ -14,20 +16,24 @@ const PostImage = () => {
 
   const navigate = useNavigate("");
 
-  const uploadImage = (e) => {
-    const file = e.target.files[0];
-    const fileRef = ref(baseStorage, "myImage" + file.name);
-    const storageRef = uploadBytesResumable(fileRef, file);
-    getDownloadURL(storageRef.snapshot.ref).then((url) => {
-      setAvatar(url);
-    });
-  };
+  // const uploadImage = (e) => {
+  //   const file = e.target.files[0];
+  //   const fileRef = ref(baseStorage, "myImage" + file.name);
+  //   const storageRef = uploadBytesResumable(fileRef, file);
+  //   getDownloadURL(storageRef.snapshot.ref).then((url) => {
+  //     setAvatar(url);
+  //   });
+  // };
 
   const createPost = async () => {
+    const storageRef = ref(baseStorage, `myImage/${avatar.name}`);
+    await uploadBytes(storageRef, avatar);
+
+    const avatarURL = await getDownloadURL(storageRef);
     addDoc(collection(db, "NBABLOG"), {
       title,
       description,
-      avatar: await avatar,
+      avatar: avatarURL,
     });
     Swal.fire({
       title: "Successful",
@@ -37,7 +43,6 @@ const PostImage = () => {
     navigate("/news");
     setTitle("");
   };
-
   return (
     <div>
       {" "}
@@ -46,7 +51,8 @@ const PostImage = () => {
         <Wrapper>
           <input
             type="file"
-            onChange={uploadImage}
+            onChange={(e) => setAvatar(e.target.files[0])}
+            accept="image/*"
             style={{ cursor: "pointer" }}
           />
           <br />
