@@ -10,8 +10,9 @@ const StorePageNine = () => {
   return (
     <Container>
         <Wrapper>
-            <img src={image} alt="" />
+        <img src={image} alt="" />
             <Holder>
+         
                 <img src={ImageOne} alt="" />
                 <img src={ImageTwo} alt="" />
                 <img src={ImageThree} alt="" />
@@ -24,6 +25,28 @@ const StorePageNine = () => {
 }
 
 export default StorePageNine
-const Container = styled.div``
-const Wrapper = styled.div``
-const Holder = styled.div``
+const Container = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+`
+const Wrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 98%;
+text-align: center;
+flex-wrap: wrap;
+`
+const Holder = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 98%;
+/* flex-wrap: wrap; */
+
+cursor: pointer;
+`

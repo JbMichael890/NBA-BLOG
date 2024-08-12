@@ -5,6 +5,7 @@ import StorePageNine from "../component/Store/StorePageNine";
 import StorePageOne from "../component/Store/StorePageOne";
 import StorePageSeven from "../component/Store/StorePageSeven";
 import StorePageSix from "../component/Store/StorePageSix";
+import StorePageTen from "../component/Store/StorePageTen";
 import StorePageThree from "../component/Store/StorePageThree";
 import StorePageTwo from "../component/Store/StorePageTwo";
 
@@ -13,13 +14,16 @@ const Store = () => {
     <div>
       <StorePageOne />
       <StorePageTwo />
+      <StorePageTen/>
       {/* <StorePageThree/> */}
-    {/* <StorePageFour/> */}
-    {/* <StorePageFive/> */}
-    {/* <StorePageSix/> */}
-    {/* <StorePageNine/> */}
-    {/* <StorePageSeven/> */}
-    {/* <StorePageEight/>  */}
+    <StorePageFour/>
+  
+    <StorePageSix/>
+    <StorePageNine/>
+    <StorePageSeven/>
+    <StorePageFive/>
+    <StorePageEight/> 
+ 
     </div>
   );
 };

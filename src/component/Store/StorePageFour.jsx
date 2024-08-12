@@ -11,10 +11,9 @@ const StorePageFour = () => {
 
 export default StorePageFour;
 const Container = styled.div`
- margin-top: 20px;
   background-image: url(${Background});
-  min-height: 100vh;
-
+  min-height: 60vh;
+/* background-color: red; */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -26,7 +25,7 @@ const Container = styled.div`
 
   @media (max-width: 500px) {
     margin-top: 0px;
-    min-height: 30vh;
+    min-height: 20vh;
     
   }
 `;

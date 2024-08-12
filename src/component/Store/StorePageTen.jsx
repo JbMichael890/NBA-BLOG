@@ -1,18 +1,20 @@
-import Background from "../../assets/svg/desk_suba_city_en.avif";
 import styled from "styled-components"
+import background from "../../assets/svg/desk_sale1.webp"
 
-const StorePageSix = () => {
+const StorePageTen = () => {
   return (
-<Container>
+    <Container>
+        <Warpper>
 
-</Container>
+        </Warpper>
+    </Container>
   )
 }
 
-export default StorePageSix
-const Container = styled.div`
- 
- background-image: url(${Background});
+export default StorePageTen
+const  Container = styled.div`
+
+  background-image: url(${background});
   min-height: 57vh;
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,4 +36,6 @@ const Container = styled.div`
   @media (max-width: 500px) {
     min-height: 20vh;
   }
-`
+`;
+
+const  Warpper = styled.div``

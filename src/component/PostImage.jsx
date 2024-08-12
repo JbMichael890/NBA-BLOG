@@ -44,39 +44,35 @@ const PostImage = () => {
     setTitle("");
   };
   return (
-    <div>
-      {" "}
-      <button>Delete Post</button>
-      <Container>
-        <Wrapper>
-          <input
-            type="file"
-            onChange={(e) => setAvatar(e.target.files[0])}
-            accept="image/*"
-            style={{ cursor: "pointer" }}
-          />
-          <br />
-          <input
-            value={title}
-            type="text"
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Title:"
-          />
-          <br />
-          <textarea
-            name="text"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            placeholder="Description:"
-          ></textarea>
-          <br />
-          <ButtonHold>
-            {" "}
-            <button onClick={createPost}>POST</button>
-          </ButtonHold>
-        </Wrapper>
-      </Container>
-    </div>
+    <Container>
+      <Wrapper>
+        <input
+          type="file"
+          onChange={(e) => setAvatar(e.target.files[0])}
+          accept="image/*"
+          style={{ cursor: "pointer" }}
+        />
+        <br />
+        <input
+          value={title}
+          type="text"
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Title:"
+        />
+        <br />
+        <textarea
+          name="text"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder="Description:"
+        ></textarea>
+        <br />
+        <ButtonHold>
+          {/* <button>Delete Post</button>/ */}
+          <button onClick={createPost}>POST</button>
+        </ButtonHold>
+      </Wrapper>
+    </Container>
   );
 };
 
@@ -93,12 +89,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 750px) {
-    margin-top: -50px;
-    margin-bottom: -100px;
-  }
   @media (max-width: 500px) {
-    margin-bottom: -170px;
+    min-height: 30vh;
   }
 `;
 
@@ -115,7 +107,7 @@ const Wrapper = styled.div`
     margin-bottom: 1px;
     @media (max-width: 811px) {
       width: 180px;
-      height: 20px;
+      height: 30px;
     }
   }
   textarea {

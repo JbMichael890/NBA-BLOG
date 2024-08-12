@@ -1,11 +1,11 @@
-import GetImage from "../component/GetImage";
+// import GetImage from "../component/GetImage";
 import PostImage from "../component/PostImage";
 
 const Postblog = () => {
   return (
     <div>
       <PostImage />
-      <GetImage />
+      {/* <GetImage /> */}
     </div>
   );
 };
