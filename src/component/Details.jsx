@@ -49,4 +49,10 @@ const Wrapper = styled.div`
       width: 100%;
     }
   }
+  h1{
+   
+    @media (max-width:768px) {
+      font-size: 20px;
+    }
+  }
 `;
