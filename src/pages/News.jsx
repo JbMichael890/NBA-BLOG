@@ -20,31 +20,31 @@ const News = () => {
     getData();
   }, []);
   const Holder = [
-    {
-      Image: `${ImageOne}`,
-      title: "REPORT:WESTBROOK, NUGGETS AGREE TO DEAL",
-      description:"Denver and veteran guard Russell Westbrook have agreed to a reported deal worth $6.8 million.",
-    },
-    {
-      Image: `${ImageTwo}`,
-      title: "OFFSEASON POWER RANKINGS:CELTICS LEAD EAST",
-      description:"Get a team-by-team look at where all 15 squads in the Eastern Conference rank after a busy offseason.",
-    },
-    {
-      Image: `${ImageThree}`,
-      title: "OLYMPICS DAY 2: USA DEFEATS SERBIA IN OPENER",
-      description:"Recap the Olympic action on July 28 featuring Team USA, Serbia, Puerto Rico and South Sudan.",
-    },
-    {
-      Image: `${ImageFour}`,
-      title: "NBA SIGNS NEW 11-YEAR MEDIA AGREEMENTS",
-      description:"The new media deals with Walt Disney Company, NBCUniversal and Amazon will expand the reach of NBA telecasts.",
-    },
-    {
-      Image: `${ImageFive}`,
-      title: "KERR: TATUM 'WILL PLAY' IN TEAM USA'S NEXT GAME",
-      description:"The Celtics star did not log a minute in Team USA's Olympic opener but is expected to get time in",
-    },
+    // {
+    //   Image: `${ImageOne}`,
+    //   title: "REPORT:WESTBROOK, NUGGETS AGREE TO DEAL",
+    //   description:"Denver and veteran guard Russell Westbrook have agreed to a reported deal worth $6.8 million.",
+    // },
+    // {
+    //   Image: `${ImageTwo}`,
+    //   title: "OFFSEASON POWER RANKINGS:CELTICS LEAD EAST",
+    //   description:"Get a team-by-team look at where all 15 squads in the Eastern Conference rank after a busy offseason.",
+    // },
+    // {
+    //   Image: `${ImageThree}`,
+    //   title: "OLYMPICS DAY 2: USA DEFEATS SERBIA IN OPENER",
+    //   description:"Recap the Olympic action on July 28 featuring Team USA, Serbia, Puerto Rico and South Sudan.",
+    // },
+    // {
+    //   Image: `${ImageFour}`,
+    //   title: "NBA SIGNS NEW 11-YEAR MEDIA AGREEMENTS",
+    //   description:"The new media deals with Walt Disney Company, NBCUniversal and Amazon will expand the reach of NBA telecasts.",
+    // },
+    // {
+    //   Image: `${ImageFive}`,
+    //   title: "KERR: TATUM 'WILL PLAY' IN TEAM USA'S NEXT GAME",
+    //   description:"The Celtics star did not log a minute in Team USA's Olympic opener but is expected to get time in",
+    // },
   ];
   console.log(getmyBase);
   return (

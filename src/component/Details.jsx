@@ -26,7 +26,7 @@ const Details = () => {
         <img src={getDescription.avatar} alt="" width="800" height="350" />
 
         <h1>Title: {getDescription.title} </h1>
-        <p>Desc: {getDescription.description}</p>
+        <p>Description: {getDescription.description}</p>
       </Wrapper>
     </Container>
   );
