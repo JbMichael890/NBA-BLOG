@@ -1,19 +1,16 @@
-import styled from "styled-components"
-import background from "../../assets/svg/desk_sale1.webp"
+import styled from "styled-components";
+import background from "../../assets/svg/desk_sale1.webp";
 
 const StorePageTen = () => {
   return (
     <Container>
-        <Warpper>
-
-        </Warpper>
+      <Warpper></Warpper>
     </Container>
-  )
-}
+  );
+};
 
-export default StorePageTen
-const  Container = styled.div`
-
+export default StorePageTen;
+const Container = styled.div`
   background-image: url(${background});
   min-height: 57vh;
   background-repeat: no-repeat;
@@ -24,11 +21,10 @@ const  Container = styled.div`
   justify-content: center;
   align-items: center;
   cursor: grab;
-  
+
   @media (max-width: 800px) {
     margin-top: 0px;
     min-height: 35vh;
-    
   }
   @media (max-width: 600px) {
     min-height: 25vh;
@@ -38,4 +34,4 @@ const  Container = styled.div`
   }
 `;
 
-const  Warpper = styled.div``
+const Warpper = styled.div``;

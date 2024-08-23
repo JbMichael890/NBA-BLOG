@@ -2,18 +2,17 @@ import styled from "styled-components";
 import Background from "../../assets/svg/desk.jpg";
 
 const StorePageFour = () => {
-  return <Container>
-    <Wrapper>
-
-    </Wrapper>
-  </Container>;
+  return (
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
+  );
 };
 
 export default StorePageFour;
 const Container = styled.div`
   background-image: url(${Background});
   min-height: 60vh;
-/* background-color: red; */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -26,7 +25,6 @@ const Container = styled.div`
   @media (max-width: 500px) {
     margin-top: 0px;
     min-height: 20vh;
-    
   }
 `;
-const Wrapper = styled.div``
+const Wrapper = styled.div``;

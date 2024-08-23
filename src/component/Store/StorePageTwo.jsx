@@ -11,7 +11,6 @@ const StorePageTwo = () => {
 
 export default StorePageTwo;
 const Container = styled.div`
-  margin-top: 20px;
   background-image: url(${background});
   min-height: 100vh;
 
@@ -26,7 +25,6 @@ const Container = styled.div`
   @media (max-width: 800px) {
     margin-top: 0px;
     min-height: 85vh;
-    
   }
   @media (max-width: 600px) {
     min-height: 75vh;
@@ -34,10 +32,6 @@ const Container = styled.div`
   @media (max-width: 500px) {
     min-height: 50vh;
   }
-
-  /* @media (max-width: 500px) {
-    min-height: 30vh;
-  } */
 `;
 
 const Warpper = styled.div``;
