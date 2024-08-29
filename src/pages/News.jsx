@@ -75,6 +75,7 @@ const News = () => {
 
               <h3>Title:{data.title}</h3>
               <Link to={`/details/${data.id}`}>
+              
                 <p>See more</p>
               </Link>
             </Card>
@@ -156,6 +157,7 @@ const Card = styled.div`
     margin: 0px;
     margin-left: 3px;
     font-weight: 800;
+    color: #FFCAD6;
     font-size: 16px;
   
   }
