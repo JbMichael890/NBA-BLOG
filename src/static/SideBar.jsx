@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Swal from "sweetalert2";
+import { NavLink } from "react-router-dom";
+
 const SideBar = () => {
   const alertUser = () => {
     Swal.fire({
@@ -11,30 +13,30 @@ const SideBar = () => {
   return (
     <Container>
       <Wrapper>
-      <a href="/">
-              <p>HOME</p>
-            </a>
-            <a href="/blog">
-              <p>BLOG ▼</p>
-            </a>
-            <a href="/news">
-              <p>NEWS ▼</p>
-            </a>
-            <a href="/entertainment">
-              <p>ENTERTAINMENT ▼</p>
-            </a>
+        <MainNav to="/">
+          <p>HOME</p>
+        </MainNav>
+        <MainNav to="/blog">
+          <p>BLOG ▼</p>
+        </MainNav>
+        <MainNav to="/news">
+          <p>NEWS ▼</p>
+        </MainNav>
+        <MainNav to="/entertainment">
+          <p>ENTERTAINMENT ▼</p>
+        </MainNav>
 
-            <p onClick={alertUser}>TEAMS </p>
+        <p onClick={alertUser}>TEAMS </p>
 
-            <p onClick={alertUser}>HISTORY </p>
+        <p onClick={alertUser}>HISTORY </p>
 
-            <p onClick={alertUser}>COMMUNITY ▼</p>
-            <a href="/postblog">
-              <p>POST-BLOG ▼</p>
-            </a>
-            <a href="/store">
-              <p>NBA-STORE ▼</p>
-            </a>
+        <p onClick={alertUser}>COMMUNITY ▼</p>
+        <MainNav to="/postblog">
+          <p>POST-BLOG ▼</p>
+        </MainNav>
+        <MainNav to="/store">
+          <p>NBA-STORE ▼</p>
+        </MainNav>
 
         <button onClick={alertUser}>SignUp</button>
       </Wrapper>
@@ -49,13 +51,12 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   background-color: #1c1c1f;
-  height: 65vh;
+  height: 73vh;
   width: 200px;
   color: indigo;
   font-weight: 800;
   p {
-    /* margin: 0px 10px; */
-    color: #ddd;
+    /* color: #ddd; */
     cursor: pointer;
     font-weight: 500;
     margin-left: 10px;
@@ -64,9 +65,9 @@ const Wrapper = styled.div`
       color: #ffcbd4;
     }
   }
-  a {
+  /* a {
     text-decoration: none;
-  }
+  } */
   button {
     background-color: blue;
     border: none;
@@ -75,9 +76,13 @@ const Wrapper = styled.div`
     width: 130px;
     border-radius: 5px;
     cursor: pointer;
-    /* font-family: Montserrat; */
     font-weight: 900;
-
     margin-left: 10px;
+  }
+`;
+const MainNav = styled(NavLink)`
+  text-decoration: none;
+  &.active {
+    color: #ffcbd4;
   }
 `;

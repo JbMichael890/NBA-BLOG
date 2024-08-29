@@ -90,7 +90,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 500px) {
-    min-height: 30vh;
+    min-height: 40vh;
   }
 `;
 
@@ -120,6 +120,9 @@ const Wrapper = styled.div`
     @media (max-width: 811px) {
       width: 180px;
       height: 75px;
+    }
+    @media (max-width: 400px) {
+      width: 100%;
     }
   }
 `;

@@ -92,6 +92,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  background-color: black;
+  @media (max-width: 500px) {
+    margin: none;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;

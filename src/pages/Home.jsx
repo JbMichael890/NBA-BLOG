@@ -5,10 +5,11 @@ import BlogPageFour from "../component/Blog/BlogPageFour";
 import BlogPageFive from "../component/Blog/BlogPageFive";
 import BlogPageSix from "../component/Blog/BlogPageSix";
 import BlogPageSeve from "../component/Blog/BlogPageSeve";
+import styled from "styled-components";
 
 const Home = () => {
   return (
-    <div>
+   <Container>
       <BlogPageOne />
       <BlogPageTwo />
       <BlogPageThree />
@@ -16,18 +17,13 @@ const Home = () => {
       <BlogPageFive />
       <BlogPageSix />
       <BlogPageSeve />
-    </div>
+   </Container>
   );
 };
 
 export default Home;
-// const Container = styled.div`
-//   min-height: calc(100vh - 70px);
-//   background-color: red;
-//   background-image: url(${Background});
-//   background-position: center;
-//   overflow-x: hidden;
-//   background-repeat: no-repeat;
-//   margin-top: 70px;
-// `;
-// const Wrapper = styled.div``;
+const Container = styled.div`
+  /* min-height: calc(100vh - 70vh);
+  overflow-x: hidden; */
+  background-color: black;
+`

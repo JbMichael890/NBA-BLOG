@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import SideBar from "./SideBar";
 import { MdOutlineMenu } from "react-icons/md";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const alertUser = () => {
@@ -30,30 +31,30 @@ const Header = () => {
           <hr />
 
           <NavHold>
-            <a href="/">
+            <MainNav to="/">
               <p>HOME</p>
-            </a>
-            <a href="/blog">
+            </MainNav>
+            <MainNav to="/blog">
               <p>BLOG ▼</p>
-            </a>
-            <a href="/news">
+            </MainNav>
+            <MainNav to="/news">
               <p>NEWS ▼</p>
-            </a>
-            <a href="/entertainment">
+            </MainNav>
+            <MainNav to="/entertainment">
               <p>ENTERTAINMENT ▼</p>
-            </a>
+            </MainNav>
 
             <p onClick={alertUser}>TEAMS </p>
 
             <p onClick={alertUser}>HISTORY </p>
 
             <p onClick={alertUser}>COMMUNITY ▼</p>
-            <a href="/postblog">
+            <MainNav to="/postblog">
               <p>POST-BLOG ▼</p>
-            </a>
-            <a href="/store">
+            </MainNav>
+            <MainNav to="/store">
               <p>NBA-STORE ▼</p>
-            </a>
+            </MainNav>
           </NavHold>
         </Wrapper>
         <Sidenav onClick={getToggle}>
@@ -108,31 +109,21 @@ const NavHold = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  p {
-    &:hover {
-      color: rgb(255, 202, 212);
-    }
-    &:active {
-      color: #ffcbd4;
-    }
-  }
+  color: #48007b;
   @media (max-width: 990px) {
     display: none;
   }
 
   p {
     margin: 0px 10px;
-    color: #48007b;
-    /* font-weight: 500; */
     cursor: pointer;
     font-weight: 500;
     transition: all 350ms;
     font-family: Outfit;
     font-size: 14px;
-    /* line-height: 60px; */
-  }
-  a {
-    text-decoration: none;
+    &:hover {
+      color: rgb(255, 202, 212);
+    }
   }
 `;
 const Sidenav = styled.div`
@@ -149,4 +140,10 @@ const LogoHold = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
+`;
+const MainNav = styled(NavLink)`
+  text-decoration: none;
+  &.active {
+    color: #ffcbd4;
+  }
 `;
